@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="">
+        <!--header-->
+        <div class="bg-gray-950 p-3">
+            <h1 class="text-xl text-center text-white">Class Rank Tailwind</h1>
+        </div>
+        <!--main-->
+        <div class="flex">
+            <!--sidebar-->
+            <div class="basis-1/4 bg-gray-900 p-3 text-white">
+                <div class="bg-slate-500 rounded-xl p-2">
+                    <h1 class="text-xl mb-2">Form Insert Score</h1>
+                    <form action="">
+                        <div class="mb-3">
+                            <label for="name">Name</label>
+                            <input class="bg-gray-900 rounded-xl p-1 block w-full" type="text" id="name" placeholder="Insert Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="score">Score</label>
+                            <input class="bg-gray-900 rounded-xl p-1 block w-full" type="number" id="score" placeholder="Insert Score">
+                        </div>
+                        <div class="grid gap-2">
+                            <button class="bg-gray-950 hover:bg-gray-600 p-2 rounded-xl text-white" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--content-->
+            <div class="basis-3/4 bg-gray-900 p-3 text-white">
+                <div class="bg-slate-500 rounded-xl p-2">
+                    <h1 class="text-xl mb-2">Table Students Score</h1>
+                    <table class="w-full">
+                        <thead class="border border-gray-900 text-center text-white">
+                            <tr class="bg-gray-950">
+                                <th class="px-6 py-3">No</th>
+                                <th class="px-6 py-3">Name</th>
+                                <th class="px-6 py-3">Score</th>
+                                <th class="px-6 py-3">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-center">
+                            <tr class="bg-gray-900 border border-gray-900 text-white">
+                                <td class="px-6 py-3">1</td>
+                                <td class="text-center">Abdurrahman Faiz</td>
+                                <td>85</td>
+                                <td><button class="bg-green-700 hover:bg-green-500 p-2 rounded-xl text-white">Edit</button>
+                                    <button class="bg-red-700 hover:bg-red-500 p-2 rounded-xl text-white">Delete</button>
+                                </td>
+                            </tr>
+                            <tr class="bg-gray-900 border-gray-900 text-white">
+                                <td class="class px-6 py-3">2</td>
+                                <td class="text-center">Achmad Fauzan</td>
+                                <td>85</td>
+                                <td><button class="bg-green-700 hover:bg-green-500 p-2 rounded-xl text-white">Edit</button>
+                                    <button class="bg-red-700 hover:bg-red-500 p-2 rounded-xl text-white">Delete</button>
+                                </td>
+                            </tr>
+                            <tr class="bg-gray-900 border-gray-900 text-white">
+                                <td class="class px-6 py-3">3</td>
+                                <td class="text-center">Adystya Anandita</td>
+                                <td>85</td>
+                                <td><button class="bg-green-700 hover:bg-green-500 p-2 rounded-xl text-white">Edit</button>
+                                    <button class="bg-red-700 hover:bg-red-500 p-2 rounded-xl text-white">Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+        <div class="bg-gray-950 p-3 text-center text-white">
+            Copyright &copy; 2023 Adystya Anandita.
+        </div>
+    </div>
+</body>
+</html>
